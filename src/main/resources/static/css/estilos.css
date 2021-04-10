@@ -1,0 +1,100 @@
+@charset "ISO-8859-1";
+
+@import url("https://fonts.google.com/specimen/Source+Sans+Pro");
+
+h1 {
+	color: #ff8000;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+h2, h3 {
+	text-align:center;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background-color: #80ffff;
+}
+
+footer {
+  	text-align: center;
+  	width: 1000px; margin: 0 auto;
+  	background-color: rgb(255, 255, 255);
+  	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#barra {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(255,255,255);
+    width: 1000px; margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+  
+.acceso {
+    float: right;
+}
+
+.acceso a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+}
+  
+.acceso a:hover {
+    background-color: rgb(47, 45, 66);
+    color: rgb(255,255,255);
+}
+
+.logo{
+	width: 100px; 
+	height: 50px;
+}
+
+.tabla_banner{
+	width: 1000px; margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    font-size:15px;
+    caption-side: bottom;
+}
+
+.banner{
+	width: 100%; 
+	height: 500px;
+}
+
+.contenido{
+    width: 1000px; margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    font-size:15px;
+    caption-side: bottom;
+}
+
+.centrar{
+	text-align:center;
+}
+
+.izquierda {
+	text-align:right;
+}
+
+.derecha {
+	text-align:right;
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+table {
+	table-layout: fixed;
+}
+
+th, td {
+  border: 1px solid black;
+}
