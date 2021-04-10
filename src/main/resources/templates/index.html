@@ -135,33 +135,60 @@
 	    <!-- Contenido a mostrar dentro del carrusel -->
 	    <div class="carousel-inner">
      		<div class="item active">
+     			
       		<table>
-	      		<tr th:each="i : ${#numbers.sequence(0, 2)}" th:value="${i}">
-					<td th:text="${listaUsuarios[i].name}"></td>
-					<td th:text="${listaUsuarios[i].email}"></td>
-					<td th:text="${listaUsuarios[i].phone}"></td>
+	      		<tr>
+					<td th:each="i : ${#numbers.sequence(0, 2)}" th:value="${i}">
+					<div class="laminas1">
+						<div class="centrar"><img class="circulo" src="imagenes/img1.jpg"></div>
+						<div th:text="${listaUsuarios[i].name}"></div> 
+						<div th:text="${listaUsuarios[i].email}"></div>
+						<div th:text="${listaUsuarios[i].phone}"></div>
+						<a class="btn btn-info" th:href="${listaUsuarios[i].website}"target="_blank">Vistar pagina web</a>
+					</div>
+					</td>
+					
 				</tr>
       		</table>
+      		
      	</div>
 
       	<div class="item">
+	      	
 	      	<table>
-	      		<tr th:each="i : ${#numbers.sequence(3, 5)}" th:value="${i}">
-					<td th:text="${listaUsuarios[i].name}"></td>
-					<td th:text="${listaUsuarios[i].email}"></td>
-					<td th:text="${listaUsuarios[i].phone}"></td>
+	      		<tr>
+					<td th:each="i : ${#numbers.sequence(3, 5)}" th:value="${i}">
+					<div class="laminas2">
+						<div class="centrar"><img class="circulo" src="imagenes/img2.jpg"></div>
+						<div th:text="${listaUsuarios[i].name}"></div> 
+						<div th:text="${listaUsuarios[i].email}"></div>
+						<div th:text="${listaUsuarios[i].phone}"></div>
+						<a class="btn btn-info" th:href="${listaUsuarios[i].website}"target="_blank">Vistar pagina web</a>
+					</div>
+					</td>
+					
 				</tr>
-	      	</table>
+      		</table>
+	      	
       	</div>
     
       	<div class="item">
+	        
 	        <table>
-	      		<tr th:each="i : ${#numbers.sequence(6, 8)}" th:value="${i}">
-					<td th:text="${listaUsuarios[i].name}"></td>
-					<td th:text="${listaUsuarios[i].email}"></td>
-					<td th:text="${listaUsuarios[i].phone}"></td>
+	      		<tr>
+					<td th:each="i : ${#numbers.sequence(6, 8)}" th:value="${i}">
+					<div class="laminas3">
+						<div class="centrar"><img class="circulo" src="imagenes/img3.jpg"></div>
+						<div th:text="${listaUsuarios[i].name}"></div> 
+						<div th:text="${listaUsuarios[i].email}"></div>
+						<div th:text="${listaUsuarios[i].phone}"></div>
+						<a class="btn btn-info" th:href="${listaUsuarios[i].website}"target="_blank">Vistar pagina web</a>
+					</div>
+					</td>
+					
 				</tr>
-	      	</table>
+      		</table>
+	        
       	</div>
 
 
@@ -180,7 +207,6 @@
 </div>
 
 
-</div>
 
 
 <footer>

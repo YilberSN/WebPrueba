@@ -51,8 +51,12 @@ public class Usuarios {
 	
 	@Override
 	public String toString() {
-		return "Nombre: "+ name + "<br>email=" + email + "<br> Telefono=" + phone + "<br> Pagina Web=" + website + "";
+		return "Usuarios [id=" + id + ", name=" + name + ", username=" + username + ", email=" + email + ", phone="
+				+ phone + ", website=" + website + "]";
 	}
+	
+	
+	
 	
 	
 	
