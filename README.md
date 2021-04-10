@@ -43,7 +43,7 @@ se obtuvieron los clientes disponibles y se enviaron a la vista, donde se insert
 
 ## Estructura de la pagina web
 
-La estructura se puede apreciar en el árbol de carpetas en el directorio del proyecto:  
+La estructura se puede apreciar en el árbol de carpetas, clases, archivos en el directorio del proyecto:  
 
 ![image](https://drive.google.com/uc?export=view&id=1KUqgtId0Ju41Ujo_4AIbfiHNeH8rLNOl)  
 
