@@ -1,6 +1,6 @@
 package com.proyecto;
 
-//Entidad que modela los usuarios del servicio rest
+//Modela los usuarios del servicio api rest
 public class Usuarios {
 	
 	//Las variables deben corresponder a las key del Json que retorna el rest
@@ -48,6 +48,8 @@ public class Usuarios {
 		this.website = website;
 	}
 	
+	//Funcion toString para imprimir por consola desde el controlador los datos de cada usuario
+	//obtenido del servicio api rest
 	
 	@Override
 	public String toString() {

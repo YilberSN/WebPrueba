@@ -2,18 +2,43 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 	<meta charset="UTF-8"/>
-	<title>Inicio</title>
+	<title>Inicio | YSN</title>
+	
+	<!-- Se referencian las hojas de estilo a utilizar -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   	<link rel="stylesheet" href="css/estilos.css">
   	
+  	<!-- Se referencian los script a utilizar en el desarrollo de la pagina -->
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<script src="http://code.jquery.com/jquery-latest.js"></script>
+  	<script src="js/arriba.js"></script>
 	
 </head>
 <body>
 <br>
-<!--Barra de navegacióm principal-->
+<!--Barra o cinta de navegación de usuario-->
 <nav>
+	<ul id="barra">
+	<!-- Se ulitilzan imagenes svg de bootstrap para los controles de la cinta de usuario-->
+    	<li class="cinta"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  			<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+  			<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+			</svg></a></li>
+        <li class="cinta"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+  			<path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/></svg></a></li>
+        <li class="cinta"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  			<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+			</svg></a></li>
+        <li class="cinta"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+  			<path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+			</svg></a></li>
+        <li class="cinta"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+  			<path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+			</svg></a></li>
+	</ul>
+	
+	<!--Barra de navegación-->
 	<ul id="barra">
 	<!-- Logo -->
 	<img class="logo" src="imagenes/lucasian-logo.png">
@@ -28,8 +53,8 @@
 
 
 <div class="contenido">
+
 	<!--Banner principal-->
-	
 	<table class="tabla_banner">
 	<tr>
 		<td>
@@ -112,15 +137,18 @@
 	</tr>
 	<tr>
 		<td>
-			<h2>Selecciona nuestro planes</h2>
-			<p>Ofrecemos dos planes de servicios con las siguientes caracteristicas: </p>
-			<div>
-				<button type="button" class="btn btn-primary">Mes</button>
-				<button type="button" class="btn btn-info">Año</button>
+			<div class="centrar">
+				<h2>Selecciona nuestro planes</h2>
+				<p>Ofrecemos dos planes de servicios con las siguientes caracteristicas: </p>
+				<div>
+					<button type="button" class="btn btn-primary">Mes</button>
+					<button type="button" class="btn btn-info">Año</button>
+				</div>
 			</div>
 		</td>
 		<td colspan="2">
 			
+			<!-- Tarjetas interactivas para mostrar los planes de ejemplo -->
 			<div class="contenedor">
 				<div class="contenedor_tarjeta">
 					<a href="#">
@@ -149,15 +177,12 @@
 						</figure>
 					</a>
 				</div>
-		
-				
 			</div>
-			
 		</td>
 	</tr>
 	</table>
 
-	
+	<!-- Carousel para mostrar las personas obtenidas a través del servicio api rest -->
 	<div class="container">
   		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 	    	<!-- Flechas de navegacion del carrusel -->
@@ -170,85 +195,89 @@
 	    <!-- Contenido a mostrar dentro del carrusel -->
 	    <div class="carousel-inner">
      		<div class="item active">
-     			
-      		<table>
-	      		<tr>
-					<td th:each="i : ${#numbers.sequence(0, 2)}" th:value="${i}">
-					<div class="laminas1">
-						<div class="centrar"><img class="circulo" src="imagenes/img1.jpg"></div>
-						<div th:text="${listaUsuarios[i].name}"></div> 
-						<div th:text="${listaUsuarios[i].email}"></div>
-						<div th:text="${listaUsuarios[i].phone}"></div>
-						<a class="btn btn-info" th:href="${listaUsuarios[i].website}"target="_blank">Vistar pagina web</a>
-					</div>
-					</td>
-					
-				</tr>
-      		</table>
-      		
-     	</div>
+	      		<table>
+		      		<tr>
+		      			<!-- Se hace uso de la etiqueta th para obtener los datos del modelo cargados desde el controlador -->
+		      			<!-- Se utiliza un for para formar el baner de 3 objetos contenidos en el con el contenido dinamico -->
+						<td th:each="i : ${#numbers.sequence(0, 2)}" th:value="${i}"
+						th:style="'background-image: url('+${direccion[i]}+'); width: 313px; height: 450px;'">
+						<div class="datos">
+							<div class="datos"><img class="circulo" th:src="${foto[i]}"></div>
+							<div th:text="${listaUsuarios[i].name}"></div> 
+							<div th:text="${listaUsuarios[i].email}"></div>
+							<div th:text="${listaUsuarios[i].phone}"></div>
+							<a class="btn btn-info" th:href="${listaUsuarios[i].website}"target="_blank">Vistar pagina web</a>
+						</div>
+						</td>
+					</tr>
+	      		</table>
+     		</div>
 
-      	<div class="item">
-	      	
-	      	<table>
-	      		<tr>
-					<td th:each="i : ${#numbers.sequence(3, 5)}" th:value="${i}">
-					<div class="laminas2">
-						<div class="centrar"><img class="circulo" src="imagenes/img2.jpg"></div>
-						<div th:text="${listaUsuarios[i].name}"></div> 
-						<div th:text="${listaUsuarios[i].email}"></div>
-						<div th:text="${listaUsuarios[i].phone}"></div>
-						<a class="btn btn-info" th:href="${listaUsuarios[i].website}"target="_blank">Vistar pagina web</a>
-					</div>
-					</td>
-					
-				</tr>
-      		</table>
-	      	
-      	</div>
+	      	<div class="item">
+		      	<table>
+		      		<tr>
+						<td th:each="i : ${#numbers.sequence(3, 5)}" th:value="${i}"
+						th:style="'background-image: url('+${direccion[i]}+'); width: 313px; height: 450px;'">
+						<div class="datos">
+							<div class="datos"><img class="circulo" th:src="${foto[i]}"></div>
+							<div th:text="${listaUsuarios[i].name}"></div> 
+							<div th:text="${listaUsuarios[i].email}"></div>
+							<div th:text="${listaUsuarios[i].phone}"></div>
+							<a class="btn btn-info" th:href="${listaUsuarios[i].website}"target="_blank">Vistar pagina web</a>
+						</div>
+						</td>
+					</tr>
+	      		</table>
+	      	</div>
     
-      	<div class="item">
-	        
-	        <table>
-	      		<tr>
-					<td th:each="i : ${#numbers.sequence(6, 8)}" th:value="${i}">
-					<div class="laminas3">
-						<div class="centrar"><img class="circulo" src="imagenes/img3.jpg"></div>
-						<div th:text="${listaUsuarios[i].name}"></div> 
-						<div th:text="${listaUsuarios[i].email}"></div>
-						<div th:text="${listaUsuarios[i].phone}"></div>
-						<a class="btn btn-info" th:href="${listaUsuarios[i].website}"target="_blank">Vistar pagina web</a>
-					</div>
-					</td>
-					
-				</tr>
-      		</table>
-	        
-      	</div>
+	      	<div class="item">
+		        <table>
+		      		<tr>
+						<td th:each="i : ${#numbers.sequence(6, 8)}" th:value="${i}"
+						th:style="'background-image: url('+${direccion[i]}+'); width: 313px; height: 450px;'">
+						<div class="datos">
+							<div class="datos"><img class="circulo" th:src="${foto[i]}"></div>
+							<div th:text="${listaUsuarios[i].name}"></div> 
+							<div th:text="${listaUsuarios[i].email}"></div>
+							<div th:text="${listaUsuarios[i].phone}"></div>
+							<a class="btn btn-info" th:href="${listaUsuarios[i].website}"target="_blank">Vistar pagina web</a>
+						</div>
+						</td>
+					</tr>
+	      		</table>
+	      	</div>
 
 
-	    <!-- Left and right controls -->
-	    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-	    	<span class="glyphicon glyphicon-chevron-left"></span>
-	      	<span class="sr-only">Previous</span>
-	    </a>
-	    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-	    	<span class="glyphicon glyphicon-chevron-right"></span>
-	      	<span class="sr-only">Next</span>
-	    </a>
+		    <!-- Controles de izquierda y derecha -->
+		    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		    	<span class="glyphicon glyphicon-chevron-left"></span>
+		      	<span class="sr-only">Anterior</span>
+		    </a>
+		    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+		    	<span class="glyphicon glyphicon-chevron-right"></span>
+		      	<span class="sr-only">Siguiente</span>
+		    </a>
   		</div>
 	</div>
-	
 </div>
 
-
-
-
-<footer>
-  <p>Autor: Yilber Serrano</p>
-  <p><a href="mailto:hege@example.com">yilber.serrano@gmail.com</a></p>
-  <div class="centrar"><img class="logo" src="imagenes/lucasian-logo.png"></div>
-</footer>
+	<!-- Se incluye el boton para subir la pagina web y llevarla al inicio -->
+	<!-- Se ulitilzan imagenes svg de bootstrap -->
+	<a class="ir-arriba"  javascript:void(0) title="Volver arriba">
+		<span class="fa-stack">
+	    	<i class="fa fa-circle fa-stack-2x"></i>
+	    	<i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+	  	</span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+	  	<path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+	</svg>
+	</a>
+	
+	
+	<footer>
+	  <p>Autor: Yilber Serrano</p>
+	  <p><a href="mailto:yilber.serrano@gmail.com">yilber.serrano@gmail.com</a></p>
+	  <div class="centrar"><img class="logo" src="imagenes/lucasian-logo.png"></div>
+	</footer>
         
 </body>
 </html>
