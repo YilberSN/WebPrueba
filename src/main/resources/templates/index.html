@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<meta charset="ISO-8859-1">
+	<meta charset="UTF-8"/>
 	<title>Inicio</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   	<link rel="stylesheet" href="css/estilos.css">
@@ -12,17 +12,17 @@
 </head>
 <body>
 <br>
-<!--Barra de navegaci�m principal-->
+<!--Barra de navegacióm principal-->
 <nav>
 	<ul id="barra">
 	<!-- Logo -->
 	<img class="logo" src="imagenes/lucasian-logo.png">
-    	<li class="acceso"><button type="button" class="btn btn-primary">Login</button></li>
-        <li class="acceso"><a href="#">Menu1</a></li>
-        <li class="acceso"><a href="#">Menu2</a></li>
-        <li class="acceso"><a href="#">Menu3</a></li>
-        <li class="acceso"><a href="#">Menu4</a></li>
-        <li class="acceso"><a href="#">Menu5</a></li>
+    	<li class="acceso"><div class="centro"><button type="button" class="btn btn-primary">Login</button></div></li>
+        <li class="acceso"><a href="#">Menu 5</a></li>
+        <li class="acceso"><a href="#">Menu 4</a></li>
+        <li class="acceso"><a href="#">Menu 3</a></li>
+        <li class="acceso"><a href="#">Menu 2</a></li>
+        <li class="acceso"><a href="#">Menu 1</a></li>
 	</ul>
 </nav>
 
@@ -33,9 +33,15 @@
 	<table class="tabla_banner">
 	<tr>
 		<td>
-			<h1>Bienvenido</h1>
-			Contenido more professional!
-			Lore
+			<h1>Bienvenido a mi pagina web de servicios</h1>
+			<p>
+			En esta pagina encontraras servicios relacionados con el desarrollo
+			de software, aplicaciones, dashboards y plataformas web.
+			</p>
+			<div>
+				<button type="button" class="btn btn-success">Empezar</button>
+				<button type="button" class="btn btn-info">Ver video</button>
+			</div>
 		</td>
 		<td colspan="2">
 			<img class="banner" src="imagenes/Captura.PNG">
@@ -43,27 +49,31 @@
 	</tr>
 	<tr>
 		<td colspan="3">
+			<div class="centro"><button type="button" class="btn btn-secondary">¿Necesitas Ayuda?</button></div>
 			<!--Titulo de la seccion-->
-			<h2>Titulo de la seccion</h2>
+			<h2>Principales Servicios ofertados</h2>
 		</td>
 	</tr>
 	<tr>
 		<td>
 			<div class="centrar">
 				<img src="imagenes/imgL1.PNG">
-				<h3>Servicio 1</h3>
+				<h3>Desarrollo de dispositivos IoT</h3>
+				<p>Diseño, contrucción e instación de dispositivos inteligentes IoT para monitoreo y analítica de variables.</p>
 			</div>
 		</td>
 		<td>
 			<div class="centrar">
 				<img src="imagenes/imgL2.PNG">
-				<h3>Servicio 2</h3>
+				<h3>Desarrollo de aplicaciones web</h3>
+				<p>Diseño, programación, actualización y mantenimiento de sitios, paginas, plataformas y aplicaciones web.</p>
 			</div>
 		</td>
 		<td>
 			<div class="centrar">
 				<img src="imagenes/imgL3.PNG">
-				<h3>Servicio 3</h3>
+				<h3>Automatización de procesos</h3>
+				<p>Estudio, planeación, diseño y puesta en funcionamiento de sistema de automatización de procesos con dispositivos industriales.</p>
 			</div>
 		</td>
 	</tr>
@@ -89,79 +99,87 @@
 	<tr>
 		<td colspan="3">
 			<div class="centrar">
-				Texto centralizar parrafo
+				<p>Gracias a nuestra experiencia en diferentes campos podemos 
+				ofrecer diferentes servicios en cualquier niver sin importar el 
+				área de aplicación bajo metodologías agiles y sin importar el 
+				tipo de lenguaje de programación</p>
 				<img src="imagenes/ovalo.png">
+				<p>¿Tienes una necesidad? ¡Nosotros la resolvemos!</p>
 			</div>
 		</td>
 	</tr>
-	<tr th:each="usuario: ${listaUsuarios}">
-		<td th:text="${usuario.name}"></td>
-		<td th:text="${usuario.email}"></td>
-		<td th:text="${usuario.phone}"></td>
+	<tr>
+		<td>
+			<h2>Selecciona nuestro planes</h2>
+			<p>Ofrecemos dos planes de servicios con las siguientes caracteristicas: </p>
+			<div>
+				<button type="button" class="btn btn-primary">Mes</button>
+				<button type="button" class="btn btn-info">Año</button>
+			</div>
+		</td>
+		<td>Plan 1</td>
+		<td>Plan 2</td>
 	</tr>
 	</table>
-	
-	<p th:text="${listaUsuarios[1].name}" />
-	
-	
+
 	
 	<div class="container">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+  		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    	<!-- Flechas de navegacion del carrusel -->
+		    <ol class="carousel-indicators">
+		    	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		      	<li data-target="#myCarousel" data-slide-to="1"></li>
+		      	<li data-target="#myCarousel" data-slide-to="2"></li>
+		    </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-      	<table>
-      		<tr th:each="i : ${#numbers.sequence(0, 2)}" th:value="${i}">
-				<td th:text="${listaUsuarios[i].name}"></td>
-				<td th:text="${listaUsuarios[i].email}"></td>
-				<td th:text="${listaUsuarios[i].phone}"></td>
-			</tr>
-      	</table>
-      </div>
+	    <!-- Contenido a mostrar dentro del carrusel -->
+	    <div class="carousel-inner">
+     		<div class="item active">
+      		<table>
+	      		<tr th:each="i : ${#numbers.sequence(0, 2)}" th:value="${i}">
+					<td th:text="${listaUsuarios[i].name}"></td>
+					<td th:text="${listaUsuarios[i].email}"></td>
+					<td th:text="${listaUsuarios[i].phone}"></td>
+				</tr>
+      		</table>
+     	</div>
 
-      <div class="item">
-        <table>
-      		<tr th:each="i : ${#numbers.sequence(3, 5)}" th:value="${i}">
-				<td th:text="${listaUsuarios[i].name}"></td>
-				<td th:text="${listaUsuarios[i].email}"></td>
-				<td th:text="${listaUsuarios[i].phone}"></td>
-			</tr>
-      	</table>
-      </div>
+      	<div class="item">
+	      	<table>
+	      		<tr th:each="i : ${#numbers.sequence(3, 5)}" th:value="${i}">
+					<td th:text="${listaUsuarios[i].name}"></td>
+					<td th:text="${listaUsuarios[i].email}"></td>
+					<td th:text="${listaUsuarios[i].phone}"></td>
+				</tr>
+	      	</table>
+      	</div>
     
-      <div class="item">
-        <table>
-      		<tr th:each="i : ${#numbers.sequence(6, 8)}" th:value="${i}">
-				<td th:text="${listaUsuarios[i].name}"></td>
-				<td th:text="${listaUsuarios[i].email}"></td>
-				<td th:text="${listaUsuarios[i].phone}"></td>
-			</tr>
-      	</table>
-      </div>
-      
-    </div>
+      	<div class="item">
+	        <table>
+	      		<tr th:each="i : ${#numbers.sequence(6, 8)}" th:value="${i}">
+					<td th:text="${listaUsuarios[i].name}"></td>
+					<td th:text="${listaUsuarios[i].email}"></td>
+					<td th:text="${listaUsuarios[i].phone}"></td>
+				</tr>
+	      	</table>
+      	</div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+
+	    <!-- Left and right controls -->
+	    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+	    	<span class="glyphicon glyphicon-chevron-left"></span>
+	      	<span class="sr-only">Previous</span>
+	    </a>
+	    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+	    	<span class="glyphicon glyphicon-chevron-right"></span>
+	      	<span class="sr-only">Next</span>
+	    </a>
+  		</div>
+	</div>
+	
 </div>
-	
-	
-	
+
+
 </div>
 
 

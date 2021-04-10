@@ -3,7 +3,7 @@
 @import url("https://fonts.google.com/specimen/Source+Sans+Pro");
 
 h1 {
-	color: #ff8000;
+	color: #337ab7;
 	font-family: 'Source Sans Pro', sans-serif;
 }
 h2, h3 {
@@ -34,7 +34,6 @@ footer {
   
 .acceso {
     float: right;
-    text-align: center;
 }
 
 .acceso a {
@@ -46,8 +45,16 @@ footer {
 }
   
 .acceso a:hover {
-    background-color: rgb(47, 45, 66);
+    background-color: #337ab7;
     color: rgb(255,255,255);
+}
+
+.centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 15px 8px;
 }
 
 .logo{
@@ -90,6 +97,12 @@ footer {
     transform: scaleX(-1);
     filter: FlipH;
     -ms-filter: "FlipH";
+}
+
+.container{
+	width: 100%; 
+	height: 500px;
+	padding: 20px 20px;
 }
 
 table {
