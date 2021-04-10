@@ -41,7 +41,18 @@ se obtuvieron los clientes disponibles y se enviaron a la vista, donde se insert
 6. Durante el desarrollo de esta prueba se realizan diferentes sincronizaciones a GitHub.
 
 
-##Autor
+## Estructura de la pagina web
+
+![image](https://drive.google.com/file/d/1KUqgtId0Ju41Ujo_4AIbfiHNeH8rLNOl/view?usp=sharing)
+
+## Vista previa de la pagina web
+
+![image](https://drive.google.com/drive/folders/131CmfjlZmas1beTo8EJcvMOfvIDP-vF_)  
+![image](https://drive.google.com/drive/folders/131CmfjlZmas1beTo8EJcvMOfvIDP-vF_)  
+![image](https://drive.google.com/drive/folders/131CmfjlZmas1beTo8EJcvMOfvIDP-vF_)  
+![image](https://drive.google.com/drive/folders/131CmfjlZmas1beTo8EJcvMOfvIDP-vF_)  
+
+## Autor
 Yilber Serrano  
 Ingeniero en Control  
 yilber.serrano@gmail.com  
