@@ -43,14 +43,18 @@ se obtuvieron los clientes disponibles y se enviaron a la vista, donde se insert
 
 ## Estructura de la pagina web
 
-![image](https://drive.google.com/file/d/1KUqgtId0Ju41Ujo_4AIbfiHNeH8rLNOl/view?usp=sharing)
+La estructura se puede apreciar en el árbol de carpetas en el directorio del proyecto:  
+
+![image](https://drive.google.com/uc?export=view&id=1KUqgtId0Ju41Ujo_4AIbfiHNeH8rLNOl)  
 
 ## Vista previa de la pagina web
 
-![image](https://drive.google.com/uc?export=view&id=1913oZeBZPBNiUuk8gu3ZSbLBA2l_VQtG)  
-![image](https://drive.google.com/drive/folders/131CmfjlZmas1beTo8EJcvMOfvIDP-vF_)  
-![image](https://drive.google.com/drive/folders/131CmfjlZmas1beTo8EJcvMOfvIDP-vF_)  
-![image](https://drive.google.com/drive/folders/131CmfjlZmas1beTo8EJcvMOfvIDP-vF_)  
+A continuación, algunas vistas de la pagina web desarrollada:  
+
+![image](https://drive.google.com/uc?export=view&id=1s760ZXepqQEk31-pUefvechJ2aMUNzsz)  
+![image](https://drive.google.com/uc?export=view&id=1ozQoID8gM6U5w3_Tb4oOFg1-tU-YBsXH)  
+![image](https://drive.google.com/uc?export=view&id=1E38i4Hr8T-5sZCvUlaeXUKEqGcMgxRqq)  
+![image](https://drive.google.com/uc?export=view&id=1TUh_7ezKb1YTyCvXWb5nda8cpucGHmOW)  
 
 ## Autor
 Yilber Serrano  
