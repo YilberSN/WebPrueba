@@ -47,7 +47,7 @@ se obtuvieron los clientes disponibles y se enviaron a la vista, donde se insert
 
 ## Vista previa de la pagina web
 
-![image](https://drive.google.com/drive/folders/131CmfjlZmas1beTo8EJcvMOfvIDP-vF_)  
+![image](https://drive.google.com/uc?export=view&id=1913oZeBZPBNiUuk8gu3ZSbLBA2l_VQtG)  
 ![image](https://drive.google.com/drive/folders/131CmfjlZmas1beTo8EJcvMOfvIDP-vF_)  
 ![image](https://drive.google.com/drive/folders/131CmfjlZmas1beTo8EJcvMOfvIDP-vF_)  
 ![image](https://drive.google.com/drive/folders/131CmfjlZmas1beTo8EJcvMOfvIDP-vF_)  
