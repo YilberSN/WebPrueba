@@ -2,10 +2,10 @@
 
 Esta es una prueba tecnica de frontend para evaluar:
 
-###1. Diseño de interfaces
-#####1.1. Implementación y construcción de Scss
-#####1.2. Implementación y construcción de Html
-#####1.3 Buenas prácticas y reutilización de Styles
+### 1. Diseño de interfaces
+##### 1.1. Implementación y construcción de Scss
+##### 1.2. Implementación y construcción de Html
+##### 1.3 Buenas prácticas y reutilización de Styles
 	
 ###2. Desarrollo Frontend - Angular
 #####2.1. Construcción del proyecto en angular
